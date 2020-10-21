@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>Emojifier</title>
+</head>
+
+<body>
+	<h1>Emojifier</h1>
+	<form action="" method="POST">
+	{% csrf_token %}
+	<textarea name="content" cols="30" rows="10"></textarea>
+	<button type="submit">Submit</button>
+	</form>
+
+	<p>
+		{{content}}		{{emoji}}
+	</p>
+</body>
+
+</html>
